@@ -27,7 +27,7 @@ body {
 }
 .container__p {
   color: hsl(150deg, 100%, 66%);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 3px;
   margin-bottom: 20px;
 }
@@ -49,6 +49,10 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  cursor: pointer;
+}
+.dice:hover {
+  box-shadow: 0 0 15px 15px hsla(150deg, 100%, 66%, 0.1);
 }
 .dice__img {
   width: 20px;
