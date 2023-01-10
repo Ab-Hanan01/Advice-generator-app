@@ -16,7 +16,7 @@ const fetchAdvice = async function () {
     }
     const { slip: data } = await response.json();
     adviceId.textContent = data.id;
-    advice.textContent = data.advice;
+    advice.textContent = `"${data.advice}"`;
     await wait();
     adviceBtn.style.opacity = 1;
   } catch (err) {

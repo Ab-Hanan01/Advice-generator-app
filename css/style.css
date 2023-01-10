@@ -52,10 +52,13 @@ body {
   cursor: pointer;
   transition: opacity 500ms;
 }
-.dice:hover {
-  box-shadow: 0 0 15px 15px hsla(150deg, 100%, 66%, 0.1);
-}
 .dice__img {
   width: 20px;
   height: 20px;
+}
+
+@media (min-width: 600px) {
+  .dice:hover {
+    box-shadow: 0 0 15px 15px hsla(150deg, 100%, 66%, 0.1);
+  }
 }/*# sourceMappingURL=style.css.map */

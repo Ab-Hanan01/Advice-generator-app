@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
 $neon-color: hsl(150, 100%, 66%);
+
 @mixin flexCenter() {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   @include flexCenter();
   background-color: hsl(218, 23%, 16%);
@@ -18,6 +22,7 @@ body {
   flex-direction: column;
   text-align: center;
 }
+
 .container {
   position: relative;
   background-color: hsl(217, 19%, 24%);
@@ -33,6 +38,7 @@ body {
     letter-spacing: 3px;
     margin-bottom: 20px;
   }
+
   &__quote {
     color: hsl(193, 38%, 86%);
     font-size: 28px;
@@ -53,11 +59,13 @@ body {
   cursor: pointer;
   transition: opacity 500ms;
 
-  &:hover {
-    box-shadow: 0 0 15px 15px hsla(150, 100%, 66%, 0.1);
-  }
   &__img {
     width: 20px;
     height: 20px;
+  }
+}
+@media (min-width: 600px) {
+  .dice:hover {
+    box-shadow: 0 0 15px 15px hsla(150, 100%, 66%, 0.1);
   }
 }
